@@ -26,10 +26,10 @@ objects:
       targetPort: 8080
     selector:
       app: ngrok
-      deploymentconfig: ngrok
+      deployment: ngrok
     type: ClusterIP
 - apiVersion: v1
-  kind: DeploymentConfig
+  kind: deployment
   metadata:
     labels:
       app: ngrok
@@ -38,12 +38,12 @@ objects:
     replicas: 1
     selector:
       app: ngrok
-      deploymentconfig: ngrok
+      deployment: ngrok
     template:
       metadata:
         labels:
           app: ngrok
-          deploymentconfig: ngrok
+          deployment: ngrok
       spec:
         containers:
         - env:
