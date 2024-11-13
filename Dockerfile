@@ -6,5 +6,9 @@ RUN unzip ngrok.zip && \
     cp ngrok /usr/bin && \
     rm ngrok.zip
 COPY bin/start.sh /bin/start.sh
+RUN chown -R nobody:nobody /bin/start.sh
+RUN chmod -R 777 /bin/start.sh
+RUN chown -R nobody:nobody /usr/bin/ngrok
+RUN chmod -R 777 /usr/bin/ngrok
 EXPOSE 8080
 ENTRYPOINT /bin/start.sh
