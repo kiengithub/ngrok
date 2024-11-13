@@ -19,6 +19,8 @@ objects:
       app: ngrok
     name: ngrok
   spec:
+    securityContext:
+      runAsUser: 0  # Ro
     ports:
     - name: 8080-tcp
       port: 8080
