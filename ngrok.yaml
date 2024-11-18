@@ -91,7 +91,7 @@ objects:
         - ngrok
         from:
           kind: ImageStreamTag
-          name: ngrok:3.2.0
+          name: ngrok:latest
       type: ImageChange
 - apiVersion: v1
   kind: Route
@@ -116,5 +116,5 @@ objects:
     tags:
     - from:
         kind: DockerImage
-        name: quay.io/openshiftfordevelopers/ngrok:3.2.0
-      name: 3.2.0
+        name: quay.io/openshiftfordevelopers/ngrok:latest
+      name: latest
