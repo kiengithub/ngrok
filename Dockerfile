@@ -10,6 +10,6 @@ RUN chown -R nobody:nobody /bin/start.sh
 RUN chmod -R 777 /bin/start.sh
 RUN chown -R nobody:nobody /usr/bin/ngrok
 RUN chmod -R 777 /usr/bin/ngrok
-RUN ngrok config add-authtoken 2p3b4FDFMcFjk4IO1wnSURfiH3S_6iGADx4aAUMiUsNGabZGD
+RUN ngrok config add-authtoken 2pbEcRiSlsfNdALNW1GMLcrHSHU_5Q9xKWE2An8pCwBxkDPxN
 EXPOSE 8080
 ENTRYPOINT /bin/start.sh
